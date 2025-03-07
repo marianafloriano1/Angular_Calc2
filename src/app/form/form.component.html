@@ -1,0 +1,29 @@
+
+<div class="card" style="max-width: 22rem;">
+    <div class="card-header text-center bg-info text-white fw-bold">
+        Calculadora
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <input type="number" class="form-control" placeholder="Digite o primeiro número" [(ngModel)]="num1" name="num1">
+            </div>
+            <div class="mb-3">
+                <input type="number" class="form-control" placeholder="Digite o segundo número" [(ngModel)]="num2" name="num2">
+            </div>
+            <div class="d-grid gap-2">
+                <button type="button" class="btn btn-outline-info" (click)="onClick('+')">Somar</button>
+                <button type="button" class="btn btn-outline-info" (click)="onClick('-')">Subtrair</button>
+                <button type="button" class="btn btn-outline-info" (click)="onClick('/')">Dividir</button>
+                <button type="button" class="btn btn-outline-info" (click)="onClick('*')">Multiplicar</button>
+                <button type="button" class="btn btn-outline-info" (click)="onClick('**')">Potenciar</button>
+                <button type="button" class="btn btn-outline-info" (click)="onClick('%')">Módulo</button>
+            </div>
+            <div class="mt-3 text-center">
+                <h5 class="text-muted">Resultado:</h5>
+                <span class="badge bg-info fs-5">{{sun}}</span>
+            </div>
+        </form>
+    </div>
+</div>
+
